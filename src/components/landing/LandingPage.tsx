@@ -209,7 +209,7 @@ export default function LandingPage() {
         <div className="nav-links">
           <a className="nav-link" href="#pain">Platform</a>
           <a className="nav-link" href="#triage">Features</a>
-          <a className="nav-link" href="#footer">Docs</a>
+          <Link className="nav-link" href="/docs">Docs</Link>
           <a className="nav-link" href="#cta">Pricing</a>
         </div>
 
@@ -252,7 +252,7 @@ export default function LandingPage() {
           <div className="mobile-nav">
             <a href="#pain" onClick={() => setMenuOpen(false)}>Platform</a>
             <a href="#triage" onClick={() => setMenuOpen(false)}>Features</a>
-            <a href="#footer" onClick={() => setMenuOpen(false)}>Docs</a>
+            <Link href="/docs" onClick={() => setMenuOpen(false)}>Docs</Link>
             <a href="#cta" onClick={() => setMenuOpen(false)}>Pricing</a>
             <div className="mobile-nav-divider" />
             {!configured ? (
@@ -301,9 +301,9 @@ export default function LandingPage() {
 
         <div className="hero-ctas">
           <PrimaryCTA label="Start Triaging" className="btn-neon-large" />
-          <a href="#footer" className="btn-link">
+          <Link href="/docs" className="btn-link">
             View Documentation <span className="arrow-symbol">→</span>
-          </a>
+          </Link>
         </div>
       </header>
 
